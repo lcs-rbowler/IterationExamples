@@ -1,5 +1,4 @@
-
-import Cocoa
+//: [Previous](@previous) / [Next](@next)
 import PlaygroundSupport
 
 // Create canvas
