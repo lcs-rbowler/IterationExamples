@@ -33,4 +33,11 @@ for k in stride(from: 0, through: 301, by: 1) {
     canvas.drawRectangle(bottomLeftX: -1+k, bottomLeftY: 0, width: 1, height: 300)
     canvas.fillColor = Color(hue: k, saturation: 100, brightness: 100, alpha: 100)
 }
+
+canvas.translate(byX: 300, byY: 0)
+
+for n in stride(from: 0, through: 300, by: 5) {
+    canvas.drawLine(fromX: n, fromY: 0, toX: 300, toY: n, lineWidth: 10)
+}
+
 PlaygroundPage.current.liveView = canvas.imageView
