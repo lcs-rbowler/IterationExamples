@@ -51,6 +51,15 @@ for n in stride(from: 0, through: 150, by: 5) {
 }
 
 //Bottom-Right Square
+canvas.translate(byX: 0, byY: -300)
+
+canvas.fillColor = Color.red
+    canvas.drawLine(fromX: 50, fromY: 50, toX: 50, toY: 250, lineWidth: 5)
+    canvas.drawLine(fromX: 50, fromY: 250, toX: 150, toY: 170, lineWidth: 5)
+    canvas.drawLine(fromX: 150, fromY: 170, toX: 50, toY: 150, lineWidth: 5)
+    canvas.drawLine(fromX: 50, fromY: 150, toX: 150, toY: 50, lineWidth: 5)
+    canvas.drawLine(fromX: 150, fromY: 250, toX: 250, toY: 170, lineWidth: 5)
+    canvas.drawLine(fromX: 250, fromY: 250, toX: 250, toY: 50, lineWidth: 5)
 
 
 PlaygroundPage.current.liveView = canvas.imageView
