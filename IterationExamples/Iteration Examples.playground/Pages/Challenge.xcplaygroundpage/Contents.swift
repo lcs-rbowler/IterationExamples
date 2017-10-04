@@ -45,9 +45,9 @@ for n in stride(from: 0, through: 150, by: 5) {
     canvas.lineColor = Color.init(hue: 120-n, saturation: 100, brightness: 100, alpha: 100)
     canvas.drawLine(fromX: 300, fromY: 150+n, toX: 300-n, toY: 300, lineWidth: 10)
     canvas.lineColor = Color.init(hue: n, saturation: 100, brightness: 100, alpha: 100)
-    canvas.drawLine(fromX: 150-n, fromY: 300, toX: 5, toY: 300-n, lineWidth: 10)
+    canvas.drawLine(fromX: 155-n, fromY: 300, toX: 5, toY: 300-n, lineWidth: 10)
     canvas.lineColor = Color.init(hue: 120-n, saturation: 100, brightness: 100, alpha: 100)
-    canvas.drawLine(fromX: 5, fromY: 150-n, toX: 5+n, toY: 5, lineWidth: 10)
+    canvas.drawLine(fromX: 5, fromY: 155-n, toX: 5+n, toY: 5, lineWidth: 10)
 }
 
 //Bottom-Right Square
