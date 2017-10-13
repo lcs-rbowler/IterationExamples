@@ -30,13 +30,15 @@ let canvas = Canvas(width: 300, height: 300)
 
 // Below this line, try combining a loop and a single statement to generate the goal
 
-for i in stride(from: 0, through: 300, by: 20) {
+canvas.translate(byX: 150, byY: 150)
+
+for i in stride(from: 0, through: 60, by: 10) {
     
     i
-       canvas.fillColor = Color(hue: i, saturation: 100, brightness: 100, alpha: 100)
-    // Draw each rung
-    canvas.drawLine(fromX: i, fromY: 0, toX: 300, toY: i)
     
+    // Draw each rung
+    canvas.drawLine(fromX: 0+i, fromY: 75-i, toX: 0-i, toY: -75+i)
+    canvas.drawLine(fromX: 75-i, fromY: 0-i, toX: -75+i, toY: 0+i)
   
 }
 

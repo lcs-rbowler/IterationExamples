@@ -14,7 +14,8 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 600, height: 600)
 
-// Below this line, try combining a loop and four statements that draw lines to generate the goal
+// RYS 4SQUARE
+
 //=====================================================================\\
 
 //Bottom-Left Square
