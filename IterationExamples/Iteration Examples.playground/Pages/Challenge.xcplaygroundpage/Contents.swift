@@ -16,13 +16,14 @@ let canvas = Canvas(width: 600, height: 600)
 
 canvas.drawShapesWithBorders = false
 
-for i in stride(from: 0, through: 360, by: 1) {
+// Background
+for i in stride(from: 0, to: 600, by: 1) {
     i
-    canvas.drawRectangle(bottomLeftX: i, bottomLeftY: 0, width: 1, height: 100)
+    canvas.drawRectangle(bottomLeftX: i, bottomLeftY: 0, width: 1, height: 600)
     canvas.fillColor = Color(hue: i, saturation: 100, brightness: 100, alpha: 100)
 }
 
-
+// Circles
 for x in stride(from: 50, through: 550, by: 100) {
     for y in stride(from: 550, through: 50, by: -100) {
         for z in stride(from: 100, through: 20, by: -20) {
